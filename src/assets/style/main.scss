@@ -1,0 +1,52 @@
+@import 'common.scss';
+//@import 'fonts.scss';
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: blueviolet;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.slide-fade-leave-active, .slide-fade-enter-active {
+  transition: all .3s ;
+}
+
+.slide-fade-enter-active {
+  transition-delay: 0s;
+}
+
+.slide-fade-enter {
+  transform: translateX(-100%);
+
+}
+
+.slide-fade-leave-to {
+  transform: translateX(100%);
+}
+
+.header {
+  overflow: hidden;
+  background: rgba(103,58,183,.3);
+  box-shadow: 1px 1px 10px #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  font-variant: small-caps;
+  height: 75px;
+  padding: 0 1em;
+  font-size: 2em;
+
+}
+
+.section {
+  position: absolute;
+  padding-top: 200px;
+  width: 100%;
+  height: 100vh;
+}

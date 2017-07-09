@@ -1,0 +1,120 @@
+// Common styles of the project
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kazmann;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.wrap{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    position: relative;
+    background: #120103;
+}
+.page {
+
+}
+
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+.page__buffer {
+    height: 50px;
+}
+.content{
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 768px;
+    overflow: visible;
+
+    //border: 1px solid royalblue;
+}
+.header{
+    overflow: hidden;
+    background: rgba(103, 58, 183,.3);
+    box-shadow: 1px 1px 10px #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: 75px;
+    padding: 0 1em 0;
+    font-size:2em;
+    nav{
+        float: right;
+        text-transform: uppercase;
+    }
+    label{
+        color: #fff;
+        display: inline-block;
+        cursor: pointer;
+
+        height: 70px;
+        font-weight: bold;
+        padding: 20px 0px 10px 0;
+        margin-left: 30px;
+
+
+        &:hover{
+            border-bottom: solid 5px gainsboro;
+            box-sizing: border-box;
+            height:65px;
+            color: gainsboro;
+            text-shadow: 1px 1px 1px #111;
+            transition: all 0.3s;
+
+        }
+
+    }
+
+}
+.logo{
+    float: left;
+    line-height: 60px;
+}
+.slide{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 80px 1em 0;
+    transition: left 0s 0.75s;
+    background-size:cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+
+}
+.slide1{
+
+  background-image: url("../../../../nprt/markup/static/img/general/slide3.jpg");
+
+}
+.slide2{
+   // background-image: url("../../../../nprt/markup/static/img/general/slide2.jpg");
+
+}
+.slide3{
+    //background-image: url("../../../../nprt/markup/static/img/general/slide3.jpg");
+
+}
+.slide4{
+    //background-image: url("../../../../nprt/markup/static/img/general/slide4.jpg");
+
+}
+
